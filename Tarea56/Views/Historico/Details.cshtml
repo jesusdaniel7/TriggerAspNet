@@ -1,0 +1,102 @@
+﻿@model Tarea56.Models.Historico
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div>
+    <h4 class="text-details">Detalles</h4>
+    <hr />
+    <br />
+    <dl class="row">
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Chasis)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Chasis)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Marca)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Marca)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Modelo)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Modelo)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Color)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Color)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Placa)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Placa)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Year)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Year)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_FechaRetencion)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_FechaRetencion)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_FechaSalida)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_FechaSalida)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Lugar)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Lugar)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Lat)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Lat)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Long)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Long)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_NombreConductor)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_NombreConductor)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Cedula)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Cedula)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.H_Comentarios)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.H_Comentarios)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index" class="btn blue">Volver</a>
+</div>
+<br />

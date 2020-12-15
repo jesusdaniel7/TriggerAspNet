@@ -1,0 +1,96 @@
+﻿@model Tarea56.Models.Vehiculo
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<div>
+    <h4 class="text-details">Detalles del Vehiculo retenido</h4>
+    <hr />
+    <br />
+    <dl class="row">
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Chasis)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Chasis)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.FechaRetencion)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.FechaRetencion)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Lugar)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Lugar)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Lat)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Lat)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Long)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Long)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.NombreConductor)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.NombreConductor)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Cedula)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Cedula)
+        </dd>
+        <dt class = "dt">
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </dt>
+        <dd class = "dd">
+            @Html.DisplayFor(model => model.Comentarios)
+        </dd>
+    </dl>
+</div>
+<div>
+    <!-- <a asp-action="Edit" asp-route-id="@Model.VehiculoID">Edit</a> | -->
+    <a asp-action="Index" class="btn blue">Volver</a>
+</div>
+<br />

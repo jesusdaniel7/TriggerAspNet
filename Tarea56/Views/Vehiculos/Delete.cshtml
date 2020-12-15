@@ -1,0 +1,50 @@
+﻿@model Tarea56.Models.Vehiculo
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3 class="text-details">¿Estás seguro de eliminar este vehiculo?</h3>
+<div>
+    <hr />
+    <br />
+    <dl class="row">
+        <dt class="dt">
+            @Html.DisplayNameFor(model => model.Chasis)
+        </dt>
+        <dd class="dd">
+            @Html.DisplayFor(model => model.Chasis)
+        </dd>
+        <dt class="dt">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class="dd">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+        <dt class="dt">
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+        <dd class="dd">
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+        <dt class="dt">
+            @Html.DisplayNameFor(model => model.NombreConductor)
+        </dt>
+        <dd class="dd">
+            @Html.DisplayFor(model => model.NombreConductor)
+        </dd>
+        <dt class="dt">
+            @Html.DisplayNameFor(model => model.Cedula)
+        </dt>
+        <dd class="dd">
+            @Html.DisplayFor(model => model.Cedula)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="VehiculoID" />
+        <input type="submit" onclick="Imprimir();" value="Eliminar" class="btn red" /> |
+        <a asp-action="Index" class="btn blue">Cancelar</a>
+    </form>
+</div>
+

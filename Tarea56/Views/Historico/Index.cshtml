@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Tarea56.Models.Historico>
+
+@{
+    ViewData["Title"] = "Vehiculos liberados";
+}
+
+
+<div class="row izquierda">
+    <form class="" asp-action="Index" method="get">
+        <div class="row">
+            <div class="input-field col s4 ">
+                <input type="text" class="white " placeholder="Placa o cedula" name="searchString" value="@ViewData["CurrentFilter"]" />
+            </div>
+            <input type="submit" value="Buscar" class="btn blue btn_bajar" />
+            <a class=" btn red btn_todos" asp-action="Index">Mostrar todo</a>
+        </div>
+    </form>
+</div>
+<div>
+    <h1 class="car_detenido">Vehiculos Liberados</h1>
+</div>
+<div class="clearBox">
+
+</div>
+
+
+<table class="centered _table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.H_Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.H_Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.H_Placa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.H_Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.H_FechaSalida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.H_NombreConductor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.H_Cedula)
+            </th>
+            <th>
+                Detalles
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.H_Marca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.H_Modelo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.H_Placa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.H_Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.H_FechaSalida)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.H_NombreConductor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.H_Cedula)
+                </td>
+
+                <td>
+                    <!-- <a asp-action="Edit" asp-route-id="@item.HistoricoID">Edit</a> | -->
+                    <a asp-action="Details" asp-route-id="@item.HistoricoID" class="btn-detalles"><i class="fas fa-info-circle"></i></a>
+                    <!--  <a asp-action="Delete" asp-route-id="@item.HistoricoID">Delete</a> -->
+                </td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+

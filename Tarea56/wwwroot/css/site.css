@@ -1,0 +1,163 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #4b6cb7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.izquierda {
+    margin-top:20px;
+    width:700px;
+    text-align: left;
+    float:left;
+}
+
+.clearBox{
+    clear:both;
+}
+.btn_bajar{
+    display:inline-block;
+    margin-top:22px;
+}
+.btn_todos{
+    display: inline-block;
+    margin-top: 22px;
+}
+
+.register{
+    margin-top:40px;
+    border-radius:20px 20px 20px 20px;
+    background: rgba(0, 16, 88, 0.20);
+    padding:30px;
+    color:white;
+    border:4px solid blue;
+}
+.register h1, h4{
+    margin:0 auto;
+    font-size:30px;
+}
+
+.text-details{
+    display:inline-block;
+    height:5px;
+    margin:20px;
+    color:white;
+    font-size:30px;
+}
+
+.dt {
+    font-size: 20px;
+    color: springgreen;
+}
+.dd{
+    margin-left:10px;
+    font-size: 20px;
+    color: white;
+}
+.logo-a {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Monospace;
+}
+
+nav{
+    background: rgba(0,0,0,0.2);
+}
+
+.btn-create i {
+    height: 0px;
+    font-size: 40px;
+    color: rgba(80, 255, 85,1);
+    margin-bottom: 20px;
+    line-height: 160px;
+    float: right;
+    margin-right:20px;
+}
+.form_div h1{
+    display: inline-block;
+    background: rgba(0,0,0,0.4);
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    padding-top:20px;
+    padding-bottom:40px;
+    height:70px;
+    width:100%;
+    border-radius:40px 40px 0 0;
+}
+
+.form_div {
+    background: rgba(0,0,0,0.3);
+    padding:0px;
+    border-radius:40px 40px 5px 5px;
+    margin-top:20px;
+    padding-bottom:20px;
+    
+}
+.form_div_data{
+    margin:0 auto;
+    width:98%;
+}
+
+.s1{
+    margin-right:10px;
+}
+
+.car_detenido {
+    float: left;
+    color: rgba(255, 255, 255,0.8);
+    font-size: 30px;
+    width: 295px;
+    height: 40px;
+    font-family: Cambria;
+    font-weight: bold;
+}
+
+.car_agregando {
+    margin: 0 auto;
+    color: rgba(255, 255, 255,0.8);
+    font-size: 30px;
+    width: 595px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Cambria;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+._table {
+    background: rgba(0,0,0,0.3);
+}
+._table th{
+    font-weight:normal;
+    background: rgba(0,0,0,0.4);
+    color:white ;
+    font-size:18px;
+    font-style: italic;
+}
+._table td{
+    font-weight:normal;
+    color:white;
+}
+.btn-eliminar {
+    color: rgba(251, 57, 57,1);
+    background: rgba(0,0,0,0);
+    font-size: 25px;
+    padding-left:7px;
+}
+.btn-detalles {
+    color: rgba(51, 61, 53,1);
+    color:#03A9F4;
+    font-size: 25px;
+}
